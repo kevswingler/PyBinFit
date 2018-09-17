@@ -1,2 +1,6 @@
 # PyBinFit
 A collection of fitness functions of pseudo binary vectors implemented in Python
+
+A pseudo binary function maps a vector of binary values (in {0,1}^p or {-1,1}^p where p is the number of variables) to a real valued output. A fitness function is used to evaluate the quality of a solution to an associated problem. In the knapsack packing problem, for example, the challenge is to maximise the value of items, taken from a list, packed in a bag, subject to a maximum allowed weight. The fitness function produces a single value - the total value of items packed or zero if their combined weight is above the maximum. For problems where solutions cannot be generated using heuristics specific to the problem, sampling from the fitness function provides data that can be used to guide a search for very good or optimal solutions. Search methods that utilise a fitness function include local search, genetic algorithms, estimation of distribution algorithms and simulated annealing. Such approaches are known as metaheuristics.
+
+This collection of fitness functions is implemented in Python and makes use of numpy. The functions are mostly taken from the metaheuristics and optimisation literature and are accompanied by references to papers that propose new metaheuristics and test them on one or more of the functions we present here.
